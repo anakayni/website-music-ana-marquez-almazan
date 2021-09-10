@@ -1,0 +1,47 @@
+/***Contact accordion***/
+div.bg-orange-light {
+  background-color: #ffd2bf;
+}
+
+div button.btn__orange {
+  background-color: #ff4614;
+}
+
+div button.btn__whatsapp {
+  background-color: #1bd741;
+}
+
+input.button-primary {
+  border: none;
+  font-size: 0.9rem;
+  padding: 5px 20px 5px 20px;
+}
+
+input.button-primary.btn__orange {
+  background-color: #ff4614;
+}
+
+/**Contact**/
+div.container.pt-7 {
+  padding-top: 60px;
+}
+
+div.row.mb-md-3 label {
+  font-weight: 600;
+}
+
+label.card__text-italic {
+  font-size: 0.8rem;
+  font-style: italic;
+  font-weight: 300;
+}
+
+span.small {
+  text-indent: 10px;
+}
+
+span.card__text-italic {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+/*# sourceMappingURL=contact.css.map */

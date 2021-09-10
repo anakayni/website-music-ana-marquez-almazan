@@ -1,0 +1,22 @@
+/**list jobs**/
+/**The backgound on search**/
+.position-relative.masthead {
+  background-image: url(../src/images/bolsa-de-trabajo-back.jpg);
+  height: 380px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.position-relative.masthead_landing {
+  background-image: url(../src/images/landing-back1.jpg);
+  height: 455px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.features-icons-icon i {
+  font-size: 2rem;
+}
+/*# sourceMappingURL=listjobs.css.map */

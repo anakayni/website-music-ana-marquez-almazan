@@ -1,0 +1,51 @@
+/**section Nav**/
+nav {
+  margin-top: 10px;
+}
+
+nav.bg-ligth {
+  background-color: #e8e8e8;
+}
+
+@media (min-width: 426px) {
+  nav ul li.nav-item a {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  nav ul li.nav-item a {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 426px) {
+  button.navbar-toggler i {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 426px) {
+  button.btn__orange span {
+    font-size: 2.3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  button.btn__orange span {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 426px) {
+  img.header__logo {
+    width: 280px;
+  }
+}
+
+@media (min-width: 1024px) {
+  img.header__logo {
+    width: 150px;
+  }
+}
+/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,478 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #222;
+}
+
+@media (min-width: 426px) {
+  div.mt-7 {
+    margin-top: 112px;
+  }
+}
+
+@media (min-width: 1024px) {
+  div.mt-7 {
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 1024px) {
+  div.mt-7 {
+    margin-top: 130px;
+  }
+}
+
+button.btn__orange--sub {
+  background-color: #ff7831;
+}
+
+button.btn.btn-outline-dark:hover {
+  background: none;
+  border: 2px solid #000;
+  font-weight: 600;
+}
+
+.carousel {
+  position: relative;
+  height: auto;
+  background: #313131;
+}
+
+/**operators**/
+div.container h2 {
+  font-weight: 600;
+}
+
+div.card {
+  width: 100%;
+  height: 100%;
+}
+
+div.courses {
+  height: 180px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+div.courses-img {
+  width: 100%;
+  height: 100%;
+}
+
+h5.card-title:hover {
+  color: #ff4714;
+  cursor: pointer;
+}
+
+p.text--orange {
+  color: #ff4714;
+}
+
+span.text--orange {
+  color: #ff4714;
+}
+
+span.btn__orange--sub {
+  background-color: #ff7831;
+}
+
+/***Index landing***/
+/**each - courses images**/
+.courses-img.bajo {
+  background-image: url(../src/images/clases/bajo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.courses-img.violin {
+  background-image: url(../src/images/clases/violin.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.courses-img.ukelele {
+  background-image: url(../src/images/clases/ukelele.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.courses-img.cello {
+  background-image: url(../src/images/clases/cello.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.courses-img.guitarra {
+  background-image: url(../src/images/clases/guitarra.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.courses-img.piano {
+  background-image: url(../src/images/clases/piano.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.courses-img.canto {
+  background-image: url(../src/images/clases/canto.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.courses-img.bateria {
+  background-image: url(../src/images/clases/bateria.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.courses-img.saxofon {
+  background-image: url(../src/images/clases/saxofon.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.courses-img.dj {
+  background-image: url(../src/images/clases/dj.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.courses-img.dibujo {
+  background-image: url(../src/images/clases/dibujo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.courses-img.flauta {
+  background-image: url(../src/images/clases/flauta.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.courses-img.estimulacion {
+  background-image: url(../src/images/clases/estimulacion.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.courses-img.produccion {
+  background-image: url(../src/images/clases/produccion.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.courses-img.bajo:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.courses-img.violin:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.courses-img.ukelele:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.courses-img.cello:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.courses-img.guitarra:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.courses-img.piano:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.courses-img.canto:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.courses-img.bateria:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.courses-img.saxofon:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.courses-img.dj:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.courses-img.dibujo:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.courses-img.flauta:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.courses-img.estimulacion:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.courses-img.produccion:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+p.card__text-italic {
+  font-size: 0.8rem;
+  font-style: italic;
+  font-weight: 200;
+  color: #7c7c7c;
+}
+
+.iframe {
+  width: 100%;
+  height: 450px;
+}
+
+/**section Nav**/
+nav {
+  margin-top: 10px;
+}
+
+nav.bg-ligth {
+  background-color: #e8e8e8;
+}
+
+@media (min-width: 426px) {
+  nav ul li.nav-item a {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  nav ul li.nav-item a {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 426px) {
+  button.navbar-toggler i {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 426px) {
+  button.btn__orange span {
+    font-size: 2.3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  button.btn__orange span {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 426px) {
+  img.header__logo {
+    width: 280px;
+  }
+}
+
+@media (min-width: 1024px) {
+  img.header__logo {
+    width: 150px;
+  }
+}
+
+/***Contact accordion***/
+div.bg-orange-light {
+  background-color: #ffd2bf;
+}
+
+div button.btn__orange {
+  background-color: #ff4614;
+}
+
+div button.btn__whatsapp {
+  background-color: #1bd741;
+}
+
+input.button-primary {
+  border: none;
+  font-size: 0.9rem;
+  padding: 5px 20px 5px 20px;
+}
+
+input.button-primary.btn__orange {
+  background-color: #ff4614;
+}
+
+/**Contact**/
+div.container.pt-7 {
+  padding-top: 60px;
+}
+
+div.row.mb-md-3 label {
+  font-weight: 600;
+}
+
+label.card__text-italic {
+  font-size: 0.8rem;
+  font-style: italic;
+  font-weight: 300;
+}
+
+span.small {
+  text-indent: 10px;
+}
+
+span.card__text-italic {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+/**list jobs**/
+/**The backgound on search**/
+.position-relative.masthead {
+  background-image: url(../src/images/bolsa-de-trabajo-back.jpg);
+  height: 380px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.position-relative.masthead_landing {
+  background-image: url(../src/images/landing-back1.jpg);
+  height: 455px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.features-icons-icon i {
+  font-size: 2rem;
+}
+
+@media (min-width: 426px) {
+  img.footer__logo {
+    width: 245px;
+  }
+}
+
+@media (min-width: 1024px) {
+  img.footer__logo {
+    width: 150px;
+  }
+}
+
+@media (min-width: 426px) {
+  div .small, div small {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  div .small, div small {
+    font-size: 0.89rem;
+  }
+}
+
+@media (min-width: 426px) {
+  i .fab {
+    font-size: 2rem;
+    margin: 20px;
+  }
+}
+
+@media (min-width: 426px) {
+  i .fab.fa-facebook-f {
+    font-size: 2rem;
+    padding: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  i .fab.fa-facebook-f {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 426px) {
+  i .fab.fa-youtube {
+    font-size: 2rem;
+    padding: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  i .fab.fa-youtube {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 426px) {
+  i .fab.fa-instagram {
+    font-size: 2rem;
+    padding: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  i .fab.fa-instagram {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
