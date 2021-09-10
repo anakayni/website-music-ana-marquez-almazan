@@ -1,0 +1,166 @@
+//Variables
+$bg-graylight: #f6f7f7;
+$description__course: #7c7c7c;
+$bg-orange-light: #ffd2bf;
+$btn__orange: hsl(13, 100%, 54%);
+$btn__orange--sub: #ff7831;
+$btn__whatsapp: #1bd741;
+$background: 'bajo, violin, ukelele, cello,guitarra, piano, canto, bateria, saxofon, dj, dibujo, flauta, estimulacion, produccion';
+$imagedir: '../src/images/clases/';
+$font-size: 12;
+$desktoplg: 1900px;
+$desktop: 1024px;
+$tablet: 768px;
+$mobile: 426px;
+$i:'';
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #222; 
+}
+
+@mixin desktoplg {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (min-width: #{$mobile}) {
+    @content;
+  }
+}
+
+div{
+  &.mt-7 {
+    @include mobile{
+        margin-top:112px;
+    } 
+    @include desktop{
+        margin-top: 60px;
+    } 
+    @include desktoplg{
+        margin-top: 130px;
+    } 
+  }
+}
+
+button {
+  &.btn__orange--sub{
+    background-color: $btn__orange--sub;
+  }
+  &.btn {
+    &.btn-outline-dark:hover {
+      background: none;
+      border: 2px solid #000;
+      font-weight: 600;
+    }
+  }
+}
+
+.carousel {
+    position: relative;
+    height: auto;
+    background: rgb(49, 49, 49);
+}
+
+/**operators**/
+div{
+  &.container {
+    h2 {
+      font-weight: 200 + 400;
+    }
+  }
+  &.card {
+    width: 100%;
+    height: 100%;
+  }
+  &.courses {
+    height: 180px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  &.courses-img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+h5 {
+  &.card-title:hover {
+    color: $btn__orange;
+    cursor: pointer;
+  }
+}
+
+p {
+  &.text--orange {
+    color: $btn__orange;
+  }
+}
+span {
+  &.text--orange {
+    color: $btn__orange;
+  }
+  &.btn__orange--sub{
+    background-color: $btn__orange--sub;
+  }
+}
+
+/***Index landing***/
+/**each - courses images**/
+
+@each $background in bajo, violin, ukelele, cello, guitarra, piano, canto, bateria, saxofon, dj, dibujo, flauta, estimulacion, produccion {
+  .courses-img.#{$background} {
+    background-image: url(#{$imagedir}#{$background}.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 1s;
+  }
+}
+
+@each $background in bajo, violin, ukelele, cello, guitarra, piano, canto, bateria, saxofon, dj, dibujo, flauta, estimulacion, produccion {
+  .courses-img.#{$background}:hover {
+    transform: scale(1.2);
+  }
+}
+
+p {
+  &.card__text-italic {
+    font-size: 0.8rem;
+    font-style: italic;
+    font-weight: 200;
+    color: $description__course;
+  }
+}
+
+
+  .iframe{
+  width: 100%;
+  height: 450px;
+}
+
+//while
+@while $font-size <= 24 {
+    h#{$i}.titles {
+        $font-size: $font-size + 2;
+    }
+    $font-size: $font-size + 2;
+}
+
+

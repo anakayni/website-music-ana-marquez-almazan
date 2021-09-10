@@ -1,0 +1,64 @@
+//Variables
+$bg-orange-light: #ffd2bf;
+$btn__orange: #ff4614;
+$btn__whatsapp: #1bd741;
+/***Contact accordion***/
+div {
+    &.bg-orange-light {
+        background-color: $bg-orange-light;
+    }
+    button {
+    &.btn__orange{
+        background-color: $btn__orange;
+      }
+    &.btn__whatsapp{
+        background-color: $btn__whatsapp;
+      }
+    } 
+}
+
+input {
+  &.button-primary{
+    border: none;
+    font-size: 0.9rem;
+    padding: 5px 20px 5px 20px;
+    &.btn__orange {
+      background-color: $btn__orange;
+    }
+  }
+}
+
+
+/**Contact**/
+div {
+    &.container {
+        &.pt-7 {
+        padding-top: 60px;
+        }
+    }
+    &.row {
+      &.mb-md-3{
+        label{
+          font-weight: 600;
+        }
+      }
+    }
+}
+
+label {
+  &.card__text-italic {
+    font-size: 0.8rem;
+    font-style: italic;
+    font-weight: 300;
+  }
+}
+
+span {
+  &.small {
+    text-indent:5px + 5;
+  }
+  &.card__text-italic {
+    font-size: 0.8rem;
+    font-style: italic;
+  }
+}

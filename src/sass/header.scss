@@ -1,0 +1,72 @@
+/**section Nav**/
+$desktop: 1024px;
+$tablet: 768px;
+$mobile: 426px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (min-width: #{$mobile}) {
+    @content;
+  }
+}
+
+nav {
+  margin-top: 5px + 5;
+    &.bg-ligth {
+      background-color: #e8e8e8;
+    }
+    ul{
+        li{
+            &.nav-item a {
+                @include mobile{
+                font-size: 2rem; 
+                }
+                @include desktop{
+                font-size: 1rem;
+                } 
+            }
+        }
+    }
+}
+
+button{
+    &.navbar-toggler i {
+        @include mobile{
+          font-size: 3rem; 
+        }
+    }
+    &.btn__orange {
+        span {
+            @include mobile{
+                font-size: 2.3rem; 
+            }
+            @include desktop{
+                font-size: 0.9rem;
+            } 
+        }
+    }
+}
+
+
+img {
+  &.header__logo {
+    @include mobile{
+      width: 280px;
+    } 
+    @include desktop{
+      width: 150px;
+    } 
+  }
+}  
+

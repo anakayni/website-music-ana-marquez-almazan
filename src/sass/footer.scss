@@ -1,0 +1,58 @@
+img {
+    &.footer__logo{
+        @include mobile{
+            width: 245px;
+        } 
+        @include desktop{
+            width:150px;
+        } 
+    }
+}
+
+div{
+    .small, small {
+        @include mobile{
+            font-size: 1.2rem;
+        } 
+        @include desktop{
+            font-size: 0.89rem;
+        } 
+    }
+}
+
+i  {
+    .fab {
+        @include mobile{
+            font-size: 2rem;
+            margin: 20px;
+        } 
+        &.fa-facebook-f {
+        @include mobile{
+            font-size: 2rem;
+            padding: 15px;
+        }
+        @include desktop{
+            font-size: 1rem;
+        } 
+    }
+    &.fa-youtube {
+        @include mobile{
+            font-size: 2rem;
+            padding: 15px;
+        }
+        @include desktop{
+            font-size: 1rem;
+        } 
+    }
+    &.fa-instagram {
+        @include mobile{
+            font-size: 2rem;
+            padding: 15px;
+        }
+        @include desktop{
+            font-size: 1rem;
+        } 
+    }
+    }
+    
+}
