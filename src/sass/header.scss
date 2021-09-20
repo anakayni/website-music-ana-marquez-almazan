@@ -22,7 +22,10 @@ $mobile: 426px;
 }
 
 nav {
-  margin-top: 5px + 5;
+     @include desktop{
+        height: 70px;
+        margin-top: 5px + 5;
+    } 
     &.bg-ligth {
       background-color: #e8e8e8;
     }
@@ -30,7 +33,8 @@ nav {
         li{
             &.nav-item a {
                 @include mobile{
-                font-size: 2rem; 
+                font-size: 3rem;
+                line-height: 6rem;; 
                 }
                 @include desktop{
                 font-size: 1rem;
@@ -43,7 +47,7 @@ nav {
 button{
     &.navbar-toggler i {
         @include mobile{
-          font-size: 3rem; 
+          font-size: 5rem; 
         }
     }
     &.btn__orange {
@@ -62,7 +66,7 @@ button{
 img {
   &.header__logo {
     @include mobile{
-      width: 280px;
+      width: 470px;
     } 
     @include desktop{
       width: 150px;

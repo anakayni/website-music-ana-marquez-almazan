@@ -3,7 +3,11 @@ body {
   color: #222;
 }
 
-@media (min-width: 426px) {
+.container.mt-5 {
+  max-width: 95%;
+}
+
+@media (min-width: 375px) {
   div.mt-7 {
     margin-top: 112px;
   }
@@ -22,13 +26,28 @@ body {
 }
 
 button.btn__orange--sub {
-  background-color: #ff7831;
+  border: 1px solid #000;
+}
+
+@media (min-width: 375px) {
+  button.btn__orange--sub {
+    height: 120px;
+    width: 531px;
+  }
 }
 
 button.btn.btn-outline-dark:hover {
   background: none;
   border: 2px solid #000;
   font-weight: 600;
+}
+
+button.navbar-toggler {
+  border-color: 0;
+}
+
+button.navbar-toggler:hover, button .navbar-toggler:active {
+  border-color: 0;
 }
 
 .carousel {
@@ -38,8 +57,26 @@ button.btn.btn-outline-dark:hover {
 }
 
 /**operators**/
+@media (min-width: 375px) {
+  div.container {
+    width: 98%;
+  }
+}
+
 div.container h2 {
   font-weight: 600;
+}
+
+@media (min-width: 375px) {
+  div.container h2 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  div.container h2 {
+    font-size: 1.5rem;
+  }
 }
 
 div.card {
@@ -48,15 +85,38 @@ div.card {
 }
 
 div.courses {
-  height: 180px;
   width: 100%;
   overflow: hidden;
   position: relative;
 }
 
+@media (min-width: 375px) {
+  div.courses {
+    height: 500px;
+  }
+}
+
+@media (min-width: 1024px) {
+  div.courses {
+    height: 180px;
+  }
+}
+
 div.courses-img {
   width: 100%;
   height: 100%;
+}
+
+@media (min-width: 375px) {
+  h5.card-title {
+    font-size: 3.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  h5.card-title {
+    font-size: 1.25rem;
+  }
 }
 
 h5.card-title:hover {
@@ -68,12 +128,52 @@ p.text--orange {
   color: #ff4714;
 }
 
+@media (min-width: 375px) {
+  p.description {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  p.description {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+}
+
 span.text--orange {
   color: #ff4714;
 }
 
 span.btn__orange--sub {
   background-color: #ff7831;
+}
+
+@media (min-width: 375px) {
+  span.p-1 {
+    padding: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  span.p-1 {
+    padding: .25rem;
+  }
+}
+
+@media (min-width: 375px) {
+  i {
+    font-size: 50px;
+    margin-left: 00px;
+  }
+}
+
+@media (min-width: 1024px) {
+  i {
+    font-size: 18px;
+    margin-left: 0px;
+  }
 }
 
 /***Index landing***/

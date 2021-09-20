@@ -11,13 +11,17 @@ $font-size: 12;
 $desktoplg: 1900px;
 $desktop: 1024px;
 $tablet: 768px;
-$mobile: 426px;
+$mobile: 375px;
 $i:'';
 
 
 body {
   font-family: 'Montserrat', sans-serif;
   color: #222; 
+}
+
+.container.mt-5 {
+    max-width: 95%;
 }
 
 @mixin desktoplg {
@@ -33,7 +37,7 @@ body {
 }
 
 @mixin tablet {
-  @media (min-width: #{$tablet}) {
+  @media (max-width: #{$tablet}) {
     @content;
   }
 }
@@ -60,7 +64,16 @@ div{
 
 button {
   &.btn__orange--sub{
-    background-color: $btn__orange--sub;
+    border: 1px solid #000;
+    @include mobile{
+        height: 120px;
+        width: 531px;
+    } 
+    @include desktop{
+        
+    } 
+    @include desktoplg{
+    } 
   }
   &.btn {
     &.btn-outline-dark:hover {
@@ -68,6 +81,12 @@ button {
       border: 2px solid #000;
       font-weight: 600;
     }
+  }
+  &.navbar-toggler {
+    border-color: 0;
+  }
+  &.navbar-toggler:hover, .navbar-toggler:active {
+    border-color: 0;
   }
 }
 
@@ -80,8 +99,17 @@ button {
 /**operators**/
 div{
   &.container {
+    @include mobile{
+       width: 98%;
+    } 
     h2 {
       font-weight: 200 + 400;
+      @include mobile{
+       font-size: 4rem;
+      } 
+      @include desktop{
+       font-size: 1.5rem;
+      } 
     }
   }
   &.card {
@@ -89,10 +117,15 @@ div{
     height: 100%;
   }
   &.courses {
-    height: 180px;
     width: 100%;
     overflow: hidden;
     position: relative;
+    @include mobile{
+       height: 500px;
+    }
+    @include desktoplg{
+        height: 180px;
+    } 
   }
   &.courses-img {
     width: 100%;
@@ -101,6 +134,14 @@ div{
 }
 
 h5 {
+  &.card-title {
+    @include mobile{
+       font-size: 3.25rem;
+    }
+    @include desktoplg{
+        font-size: 1.25rem;
+    } 
+  }
   &.card-title:hover {
     color: $btn__orange;
     cursor: pointer;
@@ -111,6 +152,16 @@ p {
   &.text--orange {
     color: $btn__orange;
   }
+  &.description{
+    @include mobile{
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+    }
+    @include desktop(){
+      margin-top: 1.2rem;
+      margin-bottom: 1.2rem;;
+    }
+  }
 }
 span {
   &.text--orange {
@@ -119,6 +170,25 @@ span {
   &.btn__orange--sub{
     background-color: $btn__orange--sub;
   }
+  &.p-1 {
+    @include mobile{
+    padding: 1.25rem;
+    }
+    @include desktop{
+    padding: .25rem;
+    } 
+  }
+}
+
+i{
+  @include mobile{
+    font-size: 50px;
+    margin-left: 00px;
+  }
+  @include desktop{
+    font-size: 18px;
+    margin-left: 0px;
+  } 
 }
 
 /***Index landing***/

@@ -1,6 +1,9 @@
 /**section Nav**/
-nav {
-  margin-top: 10px;
+@media (min-width: 1024px) {
+  nav {
+    height: 70px;
+    margin-top: 10px;
+  }
 }
 
 nav.bg-ligth {
@@ -9,7 +12,8 @@ nav.bg-ligth {
 
 @media (min-width: 426px) {
   nav ul li.nav-item a {
-    font-size: 2rem;
+    font-size: 3rem;
+    line-height: 6rem;
   }
 }
 
@@ -21,7 +25,7 @@ nav.bg-ligth {
 
 @media (min-width: 426px) {
   button.navbar-toggler i {
-    font-size: 3rem;
+    font-size: 5rem;
   }
 }
 
@@ -39,7 +43,7 @@ nav.bg-ligth {
 
 @media (min-width: 426px) {
   img.header__logo {
-    width: 280px;
+    width: 470px;
   }
 }
 
