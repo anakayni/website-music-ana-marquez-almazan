@@ -3,10 +3,15 @@
 .position-relative{
     &.masthead {
     background-image: url(../src/images/bolsa-de-trabajo-back.jpg);
-    height: 380px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    }
+    @include mobile{
+        height: 495px;
+    } 
+    @include desktop{
+        height: 380px;
     }
     &.masthead_landing {
     background-image: url(../src/images/landing-back1.jpg);

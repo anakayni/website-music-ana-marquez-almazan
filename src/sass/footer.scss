@@ -17,7 +17,7 @@ img {
         } 
     }
     &.grupomvs2{
-         @include mobile{
+        @include mobile{
             width: 300px;
         } 
         @include desktop{

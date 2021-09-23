@@ -9,13 +9,13 @@ body {
 
 @media (min-width: 375px) {
   div.mt-7 {
-    margin-top: 112px;
+    padding-top: 185px;
   }
 }
 
 @media (min-width: 1024px) {
   div.mt-7 {
-    margin-top: 60px;
+    padding-top: 70px;
   }
 }
 
