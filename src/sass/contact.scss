@@ -36,20 +36,43 @@ div {
         padding-top: 60px;
         }
     }
-    &.row {
-      &.mb-md-3{
-        label{
-          font-weight: 600;
-        }
-      }
+}
+
+h4 {
+  &.mb-3 {
+    @include mobile {
+      font-size: 2rem;
     }
+    @include desktop{
+      font-size: 1.5rem;
+    } 
+  }
 }
 
 label {
+    &.form-label {
+      @include mobile{
+        font-size: 2.3rem;
+    } 
+    @include desktop{
+      font-size: 1rem;
+    }
+  }
   &.card__text-italic {
     font-size: 0.8rem;
     font-style: italic;
     font-weight: 300;
+  }
+}
+
+input {
+  &.form-control{
+    @include mobile {
+      font-size: 2.3rem;
+    }
+    @include desktop{
+      font-size: 0.9rem;
+    } 
   }
 }
 
@@ -60,5 +83,13 @@ span {
   &.card__text-italic {
     font-size: 0.8rem;
     font-style: italic;
+  }
+}
+
+button {
+  &.btn-group-lg>.btn, .btn-lg {
+    @include mobile {
+      font-size: 3rem;
+    }
   }
 }

@@ -469,14 +469,46 @@ div.container.pt-7 {
   padding-top: 60px;
 }
 
-div.row.mb-md-3 label {
-  font-weight: 600;
+@media (min-width: 426px) {
+  h4.mb-3 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  h4.mb-3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 426px) {
+  label.form-label {
+    font-size: 2.3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  label.form-label {
+    font-size: 1rem;
+  }
 }
 
 label.card__text-italic {
   font-size: 0.8rem;
   font-style: italic;
   font-weight: 300;
+}
+
+@media (min-width: 426px) {
+  input.form-control {
+    font-size: 2.3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  input.form-control {
+    font-size: 0.9rem;
+  }
 }
 
 span.small {
@@ -486,6 +518,12 @@ span.small {
 span.card__text-italic {
   font-size: 0.8rem;
   font-style: italic;
+}
+
+@media (min-width: 426px) {
+  button.btn-group-lg > .btn, button .btn-lg {
+    font-size: 3rem;
+  }
 }
 
 /**list jobs**/
