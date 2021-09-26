@@ -30,7 +30,7 @@ img {
 div{
     .small, small {
         @include mobile{
-            font-size: 2.5rem;
+            font-size: 3rem;
         } 
         @include desktop{
             font-size: 0.89rem;
