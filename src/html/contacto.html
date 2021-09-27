@@ -106,9 +106,17 @@
                             </div>
 
                             <div class="col-12">
-                                <label for="office" class="form-label">Quiero asistir a la sucursal</label>
+                                <label for="email" class="form-label">Correo electrónico<span class="text-muted">*</span></label>
+                                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                                <div class="invalid-feedback">
+                                    Por favor ingresa un email valido.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="office" class="form-label">Quiero asistir a la sucursal*</label>
                                  <select class="form-select" id="office">
-                                    <option value="">Selecciona curso*</option>
+                                    <option value="">Selecciona curso</option>
                                     <option value="Option 1">Santa Fe</option>
                                     <option value="Option 2">Galerías Insurgentes</option>
                                     <option value="Option 3">Gran Terraza Lomas Verdes</option>
@@ -122,158 +130,9 @@
                             </div>
 
                             <div class="col-12">
-                            <label for="username" class="form-label">Username</label>
-                            <div class="input-group has-validation">
-                                <span class="input-group-text">@</span>
-                                <input type="text" class="form-control" id="username" placeholder="Username" required="">
-                            <div class="invalid-feedback">
-                                Your username is required.
-                                </div>
-                            </div>
-                            </div>
-
-                            <div class="col-12">
-                            <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
-                            <input type="email" class="form-control" id="email" placeholder="you@example.com">
-                            <div class="invalid-feedback">
-                                Please enter a valid email address for shipping updates.
-                            </div>
-                            </div>
-
-                            <div class="col-12">
-                            <label for="address" class="form-label">Address</label>
-                            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
-                            <div class="invalid-feedback">
-                                Please enter your shipping address.
-                            </div>
-                            </div>
-
-                            <div class="col-12">
-                            <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
-                            <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
-                            </div>
-
-                            <div class="col-md-5">
-                            <label for="country" class="form-label">Country</label>
-                            <select class="form-select" id="country" required="">
-                                <option value="">Choose...</option>
-                                <option>United States</option>
-                            </select>
-                            <div class="invalid-feedback">
-                                Please select a valid country.
-                            </div>
-                            </div>
-
-                            <div class="col-md-4">
-                            <label for="state" class="form-label">State</label>
-                            <select class="form-select" id="state" required="">
-                                <option value="">Choose...</option>
-                                <option>California</option>
-                            </select>
-                            <div class="invalid-feedback">
-                                Please provide a valid state.
-                            </div>
-                            </div>
-
-                            <div class="col-md-3">
-                            <label for="zip" class="form-label">Zip</label>
-                            <input type="text" class="form-control" id="zip" placeholder="" required="">
-                            <div class="invalid-feedback">
-                                Zip code required.
-                            </div>
-                            </div>
-                        </div>
-
-                        <hr class="my-4">
-
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="same-address">
-                            <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
-                        </div>
-
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="save-info">
-                            <label class="form-check-label" for="save-info">Save this information for next time</label>
-                        </div>
-
-                        <hr class="my-4">
-
-                        <h4 class="mb-3">Payment</h4>
-
-                        <div class="my-3">
-                            <div class="form-check">
-                            <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
-                            <label class="form-check-label" for="credit">Credit card</label>
-                            </div>
-                            <div class="form-check">
-                            <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
-                            <label class="form-check-label" for="debit">Debit card</label>
-                            </div>
-                            <div class="form-check">
-                            <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="">
-                            <label class="form-check-label" for="paypal">PayPal</label>
-                            </div>
-                        </div>
-
-                        <div class="row gy-3">
-                            <div class="col-md-6">
-                            <label for="cc-name" class="form-label">Name on card</label>
-                            <input type="text" class="form-control" id="cc-name" placeholder="" required="">
-                            <small class="text-muted">Full name as displayed on card</small>
-                            <div class="invalid-feedback">
-                                Name on card is required
-                            </div>
-                            </div>
-
-                            <div class="col-md-6">
-                            <label for="cc-number" class="form-label">Credit card number</label>
-                            <input type="text" class="form-control" id="cc-number" placeholder="" required="">
-                            <div class="invalid-feedback">
-                                Credit card number is required
-                            </div>
-                            </div>
-
-                            <div class="col-md-3">
-                            <label for="cc-expiration" class="form-label">Expiration</label>
-                            <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
-                            <div class="invalid-feedback">
-                                Expiration date required
-                            </div>
-                            </div>
-
-                            <div class="col-md-3">
-                            <label for="cc-cvv" class="form-label">CVV</label>
-                            <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
-                            <div class="invalid-feedback">
-                                Security code required
-                            </div>
-                            </div>
-                        </div>
-
-                        <hr class="my-4">
-
-                        <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
-                    </form>
-
-                        <form action="" method="POST">
-                            <!--select branch office-->
-                            <div class="row mb-md-3">
-                                <label for="office">Quiero asistir a la sucursal</label>
-                                <select class="u-full-width" id="office">
-                                    <option value="">Selecciona curso*</option>
-                                    <option value="Option 1">Santa Fe</option>
-                                    <option value="Option 2">Galerías Insurgentes</option>
-                                    <option value="Option 3">Gran Terraza Lomas Verdes</option>
-                                    <option value="Option 4">Juriquilla, Querétaro</option>
-                                    <option value="Option 5">Zona Esmerlda</option>
-                                    <option value="Option 6">Magnocentro Interlomas</option>
-                                </select>
-                            </div>
-                            <!--select course-->
-                            <div class="row mb-md-3">
-                                <label for="select-course">Estoy interesado en el curso de*</label>
-                                <select class="u-full-width" id="select-course">
-                                    <option value="">Clase de Interés*</option>
+                                <label for="select-course" class="form-label">Estoy interesado en el curso de*</label>
+                                 <select class="form-select" id="select-course">
+                                    <option value="">Clase de Interés</option>
                                     <option value="Bajo">Bajo</option>
                                     <option value="Saxofón">Saxofón</option>
                                     <option value="DJ">DJ</option>
@@ -290,22 +149,15 @@
                                     <option value="Iniciación Musical">Iniciación Musical</option>
                                     <option value="Ukelele">Ukelele</option>
                                 </select>
+                                <div class="invalid-feedback">
+                                    Selecciona una opción valida.
+                                </div>
                             </div>
-                            <!--name-->
-                            <div class="row mb-md-3">
-                                <label for="name">Nombre completo</label>
-                                <input class="u-full-width" type="name" placeholder="Mariana Juarez" id="name">
-                            </div>
-                            <!--email-->
-                            <div class="row mb-md-3">
-                                <label for="email">Correo electrónico</label>
-                                <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="email">
-                            </div>
-                            <!--select city-->
-                            <div class="row mb-md-3">
-                                <label for="select-cityt">Ciudad o Estado</label>
-                                <select class="u-full-width" id="select-cityt">
-                                    <option value="">Estado o ciudad*</option>
+
+                            <div class="col-12">
+                                <label for="select-cityt" class="form-label">Ciudad o Estado *</label>
+                                 <select class="form-select" id="select-cityt">
+                                    <option value="">Estado o ciudad</option>
                                     <option value="Aguascalientes">Aguascalientes</option>
                                     <option value="Baja California">Baja California</option>
                                     <option value="Baja California Sur">Baja California Sur</option>
@@ -340,12 +192,15 @@
                                     <option value="Yucatán">Yucatán</option>
                                     <option value="Zacatecas">Zacatecas</option>
                                 </select>
+                                <div class="invalid-feedback">
+                                    Selecciona una opción valida.
+                                </div>
                             </div>
-                            <!--marketing info-->
-                            <div class="row mb-md-3">
-                                <label for="marketing-info">¿Cómo nos conociste?</label>
-                                <select class="u-full-width" id="marketing-info">
-                                    <option value="">¿Por qué medio te enteraste de nosotros?*</option>
+
+                            <div class="col-12">
+                                <label for="marketing-info" class="form-label">¿Cómo nos conociste?</label>
+                                 <select class="form-select" id="marketing-info">
+                                    <option value="">¿Cómo te enteraste de nosotros?</option>
                                     <option value="Google">Google</option>
                                     <option value="Redes sociales">Redes sociales</option>
                                     <option value="Radio">Radio</option>
@@ -353,31 +208,40 @@
                                     <option value="Visite el local en el centro comercial">Visite el local en el centro comercial</option>
                                     <option value="otro">otro</option>
                                 </select>
+                                <div class="invalid-feedback">
+                                    Selecciona una opción valida.
+                                </div>
                             </div>
-                            <!--message-->
-                            <div class="row mb-md-3">
-                                <label for="marketing-info">Mensaje</label>
-                                <textarea class="u-full-width" placeholder="Deja aquí tu mensaje …" id="message" rows="5" cols="30"></textarea>
-                            </div>
-                            <!---->
-                            <div class="row mb-md-3">
+
+                             <div class="row mb-md-3">
                                 <label class="fw-light">
-                                    <input type="checkbox">
-                                    <span class="label-body">Al completar el formulario acepto la Política de Privacidad y las condiciones legales.</span>
+                                    <input id="credit" name="privacidad" type="radio" class="form-check-input" checked="" required="">
+                                    <span class="fw-normal description small">Al completar el formulario acepto la Política de Privacidad y las condiciones legales.</span>
                                 </label>
                             </div>
                             <!---->
                             <div class="row mb-md-3">
                                 <label class="fw-light">
-                                    <label for="" class="fw-light">Quiero recibir noticias de MVS Music Center y estar en contacto con la comunidad.</label>
+                                    <label for="" class="fw-normal description small">Quiero recibir noticias de MVS Music Center y estar en contacto con la comunidad.</label>
                                     <br>
-                                    <input type="radio" id="receive-yes" name="receive-news" value="Si">Si
-                                    <input type="radio" id="receive-no" name="receive-news" value="No">No
+                                    <div class="my-3">
+                                        <div class="form-check">
+                                        <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+                                        <label class="form-check-label" for="si">Sí</label>
+                                        </div>
+                                        <div class="form-check">
+                                        <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+                                        <label class="form-check-label" for="no">No</label>
+                                        </div>
+                                    </div>
                                 </label>
                             </div>
                             <input class="button-primary btn__orange rounded-pill mb-md-3 text-white" type="submit" value="Enviar">
                             <input class="button-primary btn__orange rounded-pill mb-md-3 text-white" type="reset" value="Limpiar formulario">
-                        </form>
+
+                        </div>
+                    </form>
+
                 </div>
                 <div class="col-lg-6">
                     <p class="fw-normal description small p20">Nuestro Equipo se pondrá en contacto contigo en breve para darte más información y resolver tus dudas. </p>
