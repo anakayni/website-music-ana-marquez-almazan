@@ -452,7 +452,7 @@ div button.btn__orange {
 
 @media (min-width: 426px) {
   div button.btn__orange {
-    font-size: 3rem;
+    font-size: 2.3rem;
   }
 }
 
@@ -464,7 +464,7 @@ div button.btn__orange {
 
 @media (min-width: 426px) {
   div button.samll {
-    font-size: 3rem;
+    font-size: 2.3rem;
   }
 }
 
@@ -492,7 +492,7 @@ div button.btn__whatsapp {
 
 @media (min-width: 426px) {
   div button.accordion-button {
-    font-size: 3rem;
+    font-size: 2.3rem;
   }
 }
 
@@ -519,7 +519,7 @@ div.container.pt-7 {
 
 @media (min-width: 426px) {
   div.accordion-body {
-    font-size: 3rem;
+    font-size: 2.3rem;
   }
 }
 
@@ -531,7 +531,7 @@ div.container.pt-7 {
 
 @media (min-width: 426px) {
   h4.mb-3 {
-    font-size: 3rem;
+    font-size: 2.3rem;
   }
 }
 
@@ -543,7 +543,7 @@ div.container.pt-7 {
 
 @media (min-width: 426px) {
   h6 {
-    font-size: 3rem;
+    font-size: 2.3rem;
     line-height: 4.5rem;
   }
 }
@@ -557,7 +557,7 @@ div.container.pt-7 {
 
 @media (min-width: 426px) {
   label.form-label {
-    font-size: 3rem;
+    font-size: 2.3rem;
   }
 }
 
@@ -575,7 +575,7 @@ label.card__text-italic {
 
 @media (min-width: 426px) {
   label.form-check-label {
-    font-size: 3rem;
+    font-size: 2.3rem;
   }
 }
 
@@ -587,7 +587,7 @@ label.card__text-italic {
 
 @media (min-width: 426px) {
   label.text-small {
-    font-size: 3rem;
+    font-size: 2.3rem;
   }
 }
 
@@ -599,7 +599,7 @@ label.card__text-italic {
 
 @media (min-width: 426px) {
   input.button-primary {
-    font-size: 3rem;
+    font-size: 2.3rem;
   }
 }
 
@@ -611,7 +611,7 @@ label.card__text-italic {
 
 @media (min-width: 426px) {
   input.form-control {
-    font-size: 3rem;
+    font-size: 2.3rem;
   }
 }
 
@@ -635,7 +635,7 @@ label.card__text-italic {
 
 @media (min-width: 426px) {
   input#debit {
-    font-size: 3rem;
+    font-size: 2.3rem;
     margin-left: 5px;
     margin-right: 20px;
   }
@@ -649,7 +649,7 @@ label.card__text-italic {
 
 @media (min-width: 426px) {
   input#credit {
-    font-size: 3rem;
+    font-size: 2.3rem;
     margin-left: 5px;
     margin-right: 20px;
   }
@@ -663,7 +663,7 @@ label.card__text-italic {
 
 @media (min-width: 426px) {
   input#paypal {
-    font-size: 3rem;
+    font-size: 2.3rem;
     margin-left: 5px;
     margin-right: 20px;
   }
@@ -685,8 +685,20 @@ span.card__text-italic {
 }
 
 @media (min-width: 426px) {
+  select.form-select {
+    font-size: 2.3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  select.form-select {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 426px) {
   li span {
-    font-size: 3rem;
+    font-size: 2.3rem;
   }
 }
 
@@ -698,7 +710,7 @@ span.card__text-italic {
 
 @media (min-width: 426px) {
   li strong {
-    font-size: 3rem;
+    font-size: 2.3rem;
   }
 }
 
@@ -710,7 +722,8 @@ span.card__text-italic {
 
 @media (min-width: 426px) {
   .text-muted {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    font-style: italic;
   }
 }
 
@@ -722,7 +735,7 @@ span.card__text-italic {
 
 @media (min-width: 426px) {
   button.btn-group-lg > .btn, button .btn-lg {
-    font-size: 3rem;
+    font-size: 2.3rem;
   }
 }
 
@@ -734,7 +747,7 @@ span.card__text-italic {
 
 @media (min-width: 426px) {
   button.btn.btn-secondary {
-    font-size: 3rem;
+    font-size: 2.3rem;
   }
 }
 

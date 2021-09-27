@@ -11,7 +11,7 @@ div {
     &.btn__orange{
         background-color: $btn__orange;
          @include mobile {
-          font-size: 3rem;
+          font-size: 2.3rem;
         }
         @include desktop{
           font-size:  1rem;
@@ -19,7 +19,7 @@ div {
       }
       &.samll{
         @include mobile {
-          font-size: 3rem;
+          font-size: 2.3rem;
         }
         @include desktop{
           font-size:  1rem;
@@ -36,7 +36,7 @@ div {
       }
     &.accordion-button {
         @include mobile {
-          font-size: 3rem;
+          font-size: 2.3rem;
         }
         @include desktop{
           font-size:  1rem;
@@ -66,7 +66,7 @@ div {
     }
     &.accordion-body {
       @include mobile {
-          font-size: 3rem;
+          font-size: 2.3rem;
         }
         @include desktop{
           font-size:  1rem;
@@ -77,7 +77,7 @@ div {
 h4 {
   &.mb-3 {
     @include mobile {
-      font-size: 3rem;
+      font-size: 2.3rem;
     }
     @include desktop{
       font-size: 1.5rem;
@@ -87,7 +87,7 @@ h4 {
 
 h6 {
   @include mobile {
-      font-size: 3rem;
+      font-size: 2.3rem;
       line-height: 4.5rem;
     }
     @include desktop{
@@ -99,7 +99,7 @@ h6 {
 label {
     &.form-label {
     @include mobile{
-        font-size: 3rem;
+        font-size: 2.3rem;
     } 
     @include desktop{
       font-size: 1rem;
@@ -112,7 +112,7 @@ label {
   }
   &.form-check-label{
     @include mobile{
-        font-size: 3rem;
+        font-size: 2.3rem;
     } 
     @include desktop{
       font-size: 1rem;
@@ -120,7 +120,7 @@ label {
   }
   &.text-small{
     @include mobile{
-        font-size: 3rem;
+        font-size: 2.3rem;
     } 
     @include desktop{
       font-size: 1rem;
@@ -131,7 +131,7 @@ label {
 input {
   &.button-primary{
     @include mobile {
-      font-size: 3rem;
+      font-size: 2.3rem;
     }
     @include desktop{
       font-size: 0.9rem;
@@ -139,7 +139,7 @@ input {
   }
   &.form-control{
     @include mobile {
-      font-size: 3rem;
+      font-size: 2.3rem;
     }
     @include desktop{
       font-size: 0.9rem;
@@ -155,7 +155,7 @@ input {
   }
   &#debit {
     @include mobile {
-      font-size: 3rem;
+      font-size: 2.3rem;
       margin-left: 5px;
       margin-right: 20px;
     }
@@ -165,7 +165,7 @@ input {
   }
   &#credit {
     @include mobile {
-      font-size: 3rem;
+      font-size: 2.3rem;
       margin-left: 5px;
       margin-right: 20px;
     }
@@ -175,7 +175,7 @@ input {
   }
   &#paypal {
     @include mobile {
-      font-size: 3rem;
+      font-size: 2.3rem;
       margin-left: 5px;
       margin-right: 20px;
     }
@@ -195,9 +195,19 @@ span {
   }
 }
 
+select {
+  &.form-select {
+    @include mobile {
+      font-size: 2.3rem;
+    }
+    @include desktop{
+      font-size:1rem;
+    }
+  }
+}
 li span {
-  @include mobile {
-      font-size: 3rem;
+    @include mobile {
+      font-size: 2.3rem;
     }
     @include desktop{
       font-size:1rem;
@@ -206,7 +216,7 @@ li span {
 
 li strong {
   @include mobile {
-      font-size: 3rem;
+      font-size: 2.3rem;
     }
     @include desktop{
       font-size:1rem;
@@ -215,7 +225,8 @@ li strong {
 
 .text-muted {
   @include mobile {
-      font-size: 2.5rem;
+      font-size: 2rem;
+      font-style: italic;
     }
     @include desktop{
       font-size:1rem;
@@ -225,7 +236,7 @@ li strong {
 button {
   &.btn-group-lg>.btn, .btn-lg {
     @include mobile {
-      font-size: 3rem;
+      font-size: 2.3rem;
     }
     @include desktop{
       font-size:1rem;
@@ -234,7 +245,7 @@ button {
   &.btn {
     &.btn-secondary {
        @include mobile {
-      font-size: 3rem;
+      font-size: 2.3rem;
       }
       @include desktop{
         font-size:1rem;
