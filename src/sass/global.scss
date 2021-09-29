@@ -63,7 +63,30 @@ div{
   }
 }
 
+form {
+  div {
+    @include mobile{
+          margin-bottom: 3rem;
+      } 
+      @include desktop{
+          margin-bottom: 1rem;
+      } 
+  }
+}
+
 button {
+  &.btn.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+     @include mobile{
+        font-size: 2.5rem;
+        margin-top: 2rem;
+      } 
+      @include desktop{
+         font-size: 1rem;
+          margin-top: 0rem; 
+      } 
+    }
   &.btn__orange--sub{
     border: 1px solid #000;
     @include mobile{
@@ -89,6 +112,15 @@ button {
   &.navbar-toggler:hover, .navbar-toggler:active {
     border-color: 0;
   }
+  &.btn-close {
+    @include mobile{
+      font-size: 2rem;
+    } 
+    @include desktop{
+      font-size: 1rem;
+    } 
+    
+  }
 }
 
 .carousel {
@@ -110,6 +142,14 @@ div{
       } 
       @include desktop{
        font-size: 1.5rem;
+      } 
+    }
+    h3 {
+      @include mobile{
+        font-size: 3rem;
+      } 
+      @include desktop{
+       font-size: 1rem;
       } 
     }
   }
@@ -147,6 +187,14 @@ h5 {
     color: $btn__orange;
     cursor: pointer;
   }
+  &.modal-title {
+        @include mobile{
+          font-size: 3rem;
+        } 
+        @include desktop{
+          font-size: 1.25rem;
+        } 
+      }
 }
 
 p {
@@ -162,6 +210,14 @@ p {
       margin-top: 1.2rem;
       margin-bottom: 1.2rem;;
     }
+  }
+  &.lead {
+    @include mobile{
+       font-size: 2.25rem;
+    }
+    @include desktoplg{
+        font-size: 1rem;
+    } 
   }
 }
 span {

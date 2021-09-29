@@ -27,6 +27,16 @@ img {
     }
 }
 
+.features-icons-icon i {
+    @include mobile{
+        font-size: 6rem;
+    }
+    @include desktop{
+        font-size: 2rem;
+    } 
+}
+
+
 div{
     .small, small {
         @include mobile{

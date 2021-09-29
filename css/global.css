@@ -25,6 +25,37 @@ body {
   }
 }
 
+@media (min-width: 375px) {
+  form div {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  form div {
+    margin-bottom: 1rem;
+  }
+}
+
+button.btn.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+@media (min-width: 375px) {
+  button.btn.btn-primary {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  button.btn.btn-primary {
+    font-size: 1rem;
+    margin-top: 0rem;
+  }
+}
+
 button.btn__orange--sub {
   border: 1px solid #000;
 }
@@ -48,6 +79,18 @@ button.navbar-toggler {
 
 button.navbar-toggler:hover, button .navbar-toggler:active {
   border-color: 0;
+}
+
+@media (min-width: 375px) {
+  button.btn-close {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  button.btn-close {
+    font-size: 1rem;
+  }
 }
 
 .carousel {
@@ -76,6 +119,18 @@ div.container h2 {
 @media (min-width: 1024px) {
   div.container h2 {
     font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 375px) {
+  div.container h3 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  div.container h3 {
+    font-size: 1rem;
   }
 }
 
@@ -124,6 +179,18 @@ h5.card-title:hover {
   cursor: pointer;
 }
 
+@media (min-width: 375px) {
+  h5.modal-title {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  h5.modal-title {
+    font-size: 1.25rem;
+  }
+}
+
 p.text--orange {
   color: #ff4714;
 }
@@ -139,6 +206,18 @@ p.text--orange {
   p.description {
     margin-top: 1.2rem;
     margin-bottom: 1.2rem;
+  }
+}
+
+@media (min-width: 375px) {
+  p.lead {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  p.lead {
+    font-size: 1rem;
   }
 }
 
